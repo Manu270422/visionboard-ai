@@ -1,9 +1,21 @@
 # VisionBoard AI
 
+[![Descargar última versión](https://img.shields.io/github/v/release/Manu270422/visionboard-ai?label=Descargar&style=for-the-badge)](https://github.com/Manu270422/visionboard-ai/releases/latest)
+
 Pizarrón virtual inteligente controlado por gestos de la mano. La cámara detecta
 mi mano en tiempo real con MediaPipe, un clasificador traduce la pose de los
 dedos a un gesto y ese gesto se convierte en una acción de dibujo. Puedo
 escribir en la pizarra con el dedo índice en el aire, sin tocar la pantalla.
+
+## Pruébalo ya (sin instalar nada)
+
+1. Descarga [`VisionBoardAI.exe` desde la última versión](https://github.com/Manu270422/visionboard-ai/releases/latest).
+2. Ábrelo con doble clic (la primera vez tarda unos segundos en arrancar).
+3. Permite el acceso a la cámara si Windows lo pide.
+4. Levanta el dedo índice frente a la cámara y empieza a dibujar.
+
+Solo para Windows por ahora. Para desarrollar o correr desde el código fuente,
+sigue la sección [Instalación](#instalación).
 
 ---
 
