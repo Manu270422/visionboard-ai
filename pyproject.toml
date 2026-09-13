@@ -1,0 +1,32 @@
+[project]
+name = "visionboard-ai"
+version = "1.0.0"
+description = "Pizarrón virtual inteligente controlado por gestos de la mano."
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "tests"]
+addopts = "-q"
+
+[tool.black]
+line-length = 100
+target-version = ["py312"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B", "SIM"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
+warn_unused_ignores = false
+
+[tool.ruff.lint.per-file-ignores]
+# Qt nombra sus señales y sus métodos virtuales en camelCase; respeto esa
+# convención dentro de la capa de interfaz en vez de pelearme con el framework.
+"app/ui/*.py" = ["N802", "N815"]
